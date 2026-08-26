@@ -1,0 +1,143 @@
+/* INDICE DE ESTILO 
+
+0. Generales / colores 
+1.tipografias 
+2.header 
+3.enlances y botones 
+4.areas destacadas
+
+
+*/
+
+/* Generales */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-principal: #2790f9;
+    --color-acento:  #e05826;
+    --color-tercer: #dfc6e8;
+    --color-texto: #2e2b35;
+}
+ .titulo-principal {
+
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--color-principal);
+  fonnt-size: 28px;
+ }
+
+  .titulo-secundario {
+
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--color-principal);
+  font-size: 22px;
+ }
+
+
+.parrafo {
+
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-texto);
+    font-size: 14x;
+
+}
+
+.texto-oculto{
+    display: : none;
+
+}
+
+/* header */
+
+#cabecera-principal {
+    padding: 25px 30px;
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+      /* border */
+    border-bottom: 3px solid var(--color-principal);
+}   
+/* responsive */
+
+@media only screen and (max-width: 600px){
+    #cabecera-principal{
+        flex-direction: column;}
+
+        .boton-principal{
+    /* se comporte como un bloque */
+    display: block;
+    /* ancho */
+    width: 96%;
+     /* margen */
+    margin: 5px 2% 5px 2%;
+     /* alineacion al centro */
+     text-align: center;
+      /* borde inferior */
+    border-bottom: 1px solid var(--color-principal);
+     /* quito borde */
+     border-radius: 0;
+
+     }
+
+/* enlances y botones */
+
+nav[role-navigation]{
+    width: 100%;
+}
+
+}
+
+
+
+
+
+/* enlances y botones */
+
+.boton-principal{
+
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--color-principal);
+  font-size: 18px;
+  /* quitar linea inferior */
+  text-decoration: none;
+  /* cuerpo por medio de relleno */
+    padding: 8px 15px 8px 15px;
+    /* animo el paso del mouse */
+    transition: all linear 0.3s;
+      /* bordes */
+    border-radius: 3px;
+ }
+
+ .boton-principal:hover{
+    color: rgb(255, 255, 255);
+    background-color: var(--color-principal);
+ }
+
+ /* areas destacadas*/
+
+ #areas-destacadas div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element-row{
+    display: flex;
+}
