@@ -23,6 +23,41 @@
     --color-tercer: #dfc6e8;
     --color-texto: #2e2b35;
 }
+
+img{
+    width: 100%;
+}
+
+.element-row{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.boton-vermas:hover{
+     color: rgb(255, 255, 255);
+    background-color: var(--color-principal);
+}
+
+
+
+.boton-vermas{
+     font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--color-principal);
+  font-size: 18px;
+  /* quitar linea inferior */
+  text-decoration: none;
+  /* cuerpo por medio de relleno */
+    padding: 8px 15px 8px 15px;
+    /* animo el paso del mouse */
+    transition: all linear 0.3s;
+      /* bordes */
+    border-radius: 3px;
+ }
+
  .titulo-principal {
 
   font-family: "Merriweather Sans", sans-serif;
@@ -31,6 +66,8 @@
   font-style: normal;
   color: var(--color-principal);
   fonnt-size: 28px;
+  text-align: center;
+    
  }
 
   .titulo-secundario {
@@ -41,6 +78,7 @@
   font-style: normal;
   color: var(--color-principal);
   font-size: 22px;
+
  }
 
 
@@ -56,7 +94,7 @@
 }
 
 .texto-oculto{
-    display: : none;
+    display: none;
 
 }
 
@@ -71,9 +109,27 @@
       /* border */
     border-bottom: 3px solid var(--color-principal);
 }   
-/* responsive */
 
+#area-experiencias{
+    padding: 100px;
+    background: url(assets/obelisco-buenos-aires.jpeg) center center no-repeat;
+    background-size: cover;
+
+}
+
+#area-experiencias video{  
+    margin: 30px 5%;
+
+}
+
+
+/* responsive */
 @media only screen and (max-width: 600px){
+    
+    .element-row{
+          flex-direction: column;
+          align-items: center;
+     }  
     #cabecera-principal{
         flex-direction: column;}
 
@@ -90,6 +146,10 @@
     border-bottom: 1px solid var(--color-principal);
      /* quito borde */
      border-radius: 0;
+
+
+   
+            
 
      }
 
@@ -136,8 +196,21 @@ nav[role-navigation]{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
-.element-row{
-    display: flex;
+#areas-destacadas{
+    padding: 100px;
 }
+
+.articulo-index{
+    padding: 20px;
+}
+
+.articulo-index *{
+    margin: 0 0 10px 0;
+}
+
+
+
+
